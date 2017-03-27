@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_nameTip">Tip Calculator</string>
+    <string name="DollarSign">$</string>
+    <string name="_0_00">$0.00</string>
+    <string name="_0">0%</string>
+    <string name="bill_amount">Bill Amount:</string>
+    <string name="select_tip_amount">Select Tip Amount:</string>
+    <string name="total_balance">Total Balance:</string>
+    <string name="total_balance_per_person">Total Balance per Person:</string>
+    <string name="total_tip">Total Tip:</string>
+    <string name="total_tip_per_person">Total Tip per Person:</string>
+    <string name="_0_00noD">0.00</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
+    <string name="_1">1</string>
+    <string name="number_of_people">Number of People:</string>
+</resources>

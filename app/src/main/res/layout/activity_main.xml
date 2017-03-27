@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cresendiz7.tipcalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bill_amount"/>
+    <TextView
+        android:text="@string/DollarSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bill"
+        android:textSize="50sp"
+        android:layout_alignBaseline="@+id/balance"
+        android:layout_alignParentStart="true"
+        android:id="@+id/$" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="@string/_0_00noD"
+        android:textSize="50sp"
+        android:layout_toEndOf="@id/$"
+        android:layout_below="@+id/bill"
+        android:id="@+id/balance"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance"
+        android:text="@string/select_tip_amount"
+/>
+    <TextView
+        android:id="@+id/tipNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_0"
+        android:layout_below="@id/tip"
+/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipNumber"
+        android:id="@+id/tipSeekBar"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tipView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonMinus"
+        android:text="@string/total_tip" />
+
+    <TextView
+        android:id="@+id/totalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipView"
+        android:textSize="50sp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/_0_00" />
+    <TextView
+        android:id="@+id/totalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalTip"
+        android:text="@string/total_balance" />
+    <TextView
+        android:id="@+id/totalBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalView"
+        android:textSize="50sp"
+        android:text="@string/_0_00" />
+
+    <TextView
+        android:text="@string/number_of_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipSeekBar"
+        android:layout_alignParentStart="true"
+        android:id="@+id/people" />
+
+    <Button
+        android:text="@string/Minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/people"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buttonMinus"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:text="@string/_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/people"
+        android:layout_toEndOf="@+id/buttonMinus"
+        android:layout_alignTop="@id/buttonMinus"
+        android:layout_alignBottom="@id/buttonMinus"
+        android:gravity="center"
+        android:id="@+id/peopleValue"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="@string/Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/people"
+        android:layout_toEndOf="@+id/peopleValue"
+        android:id="@+id/buttonPlus"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
